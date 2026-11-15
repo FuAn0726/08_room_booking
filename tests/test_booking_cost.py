@@ -29,7 +29,7 @@ def test_calculate_booking_cost_with_valid_input_returns_int():
     # Assert
     assert type(result) is int
 
-@pytest.mark.parametrize(
+@pytest.mark.parametrize(#hello
     "nights, rate",
     [
         (0, 10000),  # nights below minimum
