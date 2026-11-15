@@ -42,7 +42,7 @@ def test_calculate_booking_cost_with_out_of_range_input_raises_value_error(night
     with pytest.raises(ValueError):
         calculate_booking_cost(nights, rate)
 
-@pytest.mark.parametrize(
+@pytest.mark.parametrize(#hello
     "nights, rate",
     [
         ("3", 10000),  # nights is string
