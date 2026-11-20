@@ -1,7 +1,7 @@
 from src.booking_cost import calculate_booking_cost
 import pytest
 
-@pytest.mark.parametrize( #hi
+@pytest.mark.parametrize( 
     "nights, rate, expected",
     [
         (3, 15000, 45000),  # typical stay
@@ -29,7 +29,7 @@ def test_calculate_booking_cost_with_valid_input_returns_int():
     # Assert
     assert type(result) is int
 
-@pytest.mark.parametrize(#hi
+@pytest.mark.parametrize(
     "nights, rate",
     [
         (0, 10000),  # nights below minimum
