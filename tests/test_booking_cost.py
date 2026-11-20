@@ -1,7 +1,7 @@
 from src.booking_cost import calculate_booking_cost
 import pytest
 
-@pytest.mark.parametrize(
+@pytest.mark.parametrize( #hi
     "nights, rate, expected",
     [
         (3, 15000, 45000),  # typical stay
