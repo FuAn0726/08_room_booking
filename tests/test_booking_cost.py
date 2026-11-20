@@ -1,7 +1,7 @@
 from src.booking_cost import calculate_booking_cost
 import pytest
 
-@pytest.mark.parametrize(
+@pytest.mark.parametrize( #hi
     "nights, rate, expected",
     [
         (3, 15000, 45000),  # typical stay
@@ -42,7 +42,7 @@ def test_calculate_booking_cost_with_out_of_range_input_raises_value_error(night
     with pytest.raises(ValueError):
         calculate_booking_cost(nights, rate)
 
-@pytest.mark.parametrize(#hello
+@pytest.mark.parametrize(
     "nights, rate",
     [
         ("3", 10000),  # nights is string
@@ -51,7 +51,7 @@ def test_calculate_booking_cost_with_out_of_range_input_raises_value_error(night
         (3, True),  # rate is bool
     ],
 )
-def test_calculate_booking_cost_with_invalid_type_raises_type_error(nights, rate): #he
+def test_calculate_booking_cost_with_invalid_type_raises_type_error(nights, rate): 
     # Act and assert
     with pytest.raises(TypeError):
         calculate_booking_cost(nights, rate)
