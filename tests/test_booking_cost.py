@@ -29,7 +29,7 @@ def test_calculate_booking_cost_with_valid_input_returns_int():
     # Assert
     assert type(result) is int
 
-@pytest.mark.parametrize(#hello
+@pytest.mark.parametrize(
     "nights, rate",
     [
         (0, 10000),  # nights below minimum
@@ -51,7 +51,7 @@ def test_calculate_booking_cost_with_out_of_range_input_raises_value_error(night
         (3, True),  # rate is bool
     ],
 )
-def test_calculate_booking_cost_with_invalid_type_raises_type_error(nights, rate): #hi
+def test_calculate_booking_cost_with_invalid_type_raises_type_error(nights, rate): 
     # Act and assert
     with pytest.raises(TypeError):
         calculate_booking_cost(nights, rate)
