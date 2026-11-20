@@ -51,7 +51,11 @@ def test_calculate_booking_cost_with_out_of_range_input_raises_value_error(night
         (3, True),  # rate is bool
     ],
 )
+<<<<<<< HEAD
 def test_calculate_booking_cost_with_invalid_type_raises_type_error(nights, rate): #hi
+=======
+def test_calculate_booking_cost_with_invalid_type_raises_type_error(nights, rate): #hii
+>>>>>>> 45082bf92700d0861fa9d81c8cfd016ddaefb643
     # Act and assert
     with pytest.raises(TypeError):
         calculate_booking_cost(nights, rate)
